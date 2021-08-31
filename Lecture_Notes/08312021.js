@@ -89,3 +89,26 @@ modelX.drive().honkHorn();
 
 modelX.altDrive(); // Calling the parent class drive
 console.log(modelX);
+
+
+// BLACK BELT MAYBE??????????????????????????????????????????????????????????????????????????
+const animals = ["tiger", "bird", "zebra", "monkey"];
+
+// filter()
+// const filteredData = animals.filter( (x , i) => x.includes("o")) // Must be true or false
+const filteredData = animals.filter( (animal , index) => animal.includes("o")).map( (element, index) => element + " contains an 'o'") // filter the data first then map it
+
+
+console.log(filteredData);
+
+// map() You can only map over an Array, it's an array method
+
+// .map() has to return something, the first parameter must be an element in the array and the second has to be the index (optional)
+const x = animals.map((animal, index) => {  // Storing a map in a variable and display that variable
+    return `${index} - ${animal} is cool`;
+})
+
+// One line map()
+const x1 = animals.map( (animal, index) => animal + "is cool!" + index);
+
+console.log(x);

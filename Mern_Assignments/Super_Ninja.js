@@ -1,4 +1,5 @@
 
+
 // Creating a ninja class
 
 class Ninja {
