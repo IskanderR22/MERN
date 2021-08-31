@@ -3,7 +3,7 @@
 
 class Ninja {
     constructor(name){ // Constructor that will take in a name argument 
-        this.name = name; // Setting each attribute in the Ninja calss
+        this.name = name; // Setting each attribute in the Ninja class
         this.health = 100;
         this.speed = 3;
         this.strength = 3;
@@ -54,7 +54,7 @@ class Sensei extends Ninja {
 }
 
 // Instantiating the Ninja class object 
-const ninja1 = new Ninja("Ice"); // We need to pass in an aggument for the Ninja class 
+const ninja1 = new Ninja("Ice"); // We need to pass in an argument for the Ninja class 
 
 ninja1.sayName();
 ninja1.showStats();
@@ -67,4 +67,4 @@ const sensei1 = new Sensei("Iskander");
 
 sensei1.sayName();
 sensei1.showStats();
-sensei1.speakWisdom().speakWisdom().speakWisdom(); // Chaining methods while we return this;
+sensei1.speakWisdom().speakWisdom().speakWisdom(); // Chaining methods while we use return this;
