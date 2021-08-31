@@ -15,12 +15,12 @@ class Ninja {
     }
 
     showStats(){
-        console.log("Name: " + this.name + "\n Strength: " + this.strength);
-        console.log("Speed: " + this.speed + "\n Health: " + this.health);
+        console.log("Name: " + this.name + "\n Strength: " + this.strength); // Prints the name and strength values 
+        console.log("Speed: " + this.speed + "\n Health: " + this.health); // Prints the speed and health values 
     }
 
     drinkSake(){
-        this.health += 10;
+        this.health += 10; // Adds 10 to the health attribute 
     }
 
 }
