@@ -1,6 +1,6 @@
 
 import './App.css';
-import PersonCard from './Components/PersonCard'
+import PersonCard from './components/PersonCard'
 
 
 // Creating an array of people objects 
@@ -15,8 +15,8 @@ function App() {
   // Using map() to display the people objects using the key value pairs 
   return (
     <div className="App"> 
-        {peopleArray.map(person => {
-          return <PersonCard header = {person.lastName +", " + person.firstName} firstName = {person.firstName} lastName = {person.lastName} age ={person.age} hairColor = {person.hairColor}/>
+        {peopleArray.map(person => { // {...person} spreads all the info from the peopleArray, firstName, lastName, age, hairColor
+          return <PersonCard  {...person} header = {person.lastName + ", " + person.firstName} />
         })}
     </div>
   );

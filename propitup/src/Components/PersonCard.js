@@ -12,7 +12,6 @@ class PersonCard extends Component {
     }
 
     // Methods 
-
     increaseAge = () => {
         this.setState({
             age: this.state.age + 1
