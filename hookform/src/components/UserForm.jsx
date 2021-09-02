@@ -62,7 +62,7 @@ const UserForm = (props) => {
         else if(event.length < 8) {
             setPasswordError("Must be at least 8 characters!")
         }
-        else setPasswordError(`Perfect! ${event}!`)
+        else setPasswordError(`Perfect!!`)
     }
 
     // This is the password error function ------- 
@@ -73,7 +73,7 @@ const UserForm = (props) => {
         else if( event !== password) {
             setConfirmPasswordError("The passwords must match!!")
         }
-        else setConfirmPasswordError(`Perfect! ${event}!`)
+        else setConfirmPasswordError(`Perfect!!`)
     }
 
     return(
