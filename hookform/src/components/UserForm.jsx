@@ -38,7 +38,7 @@ const UserForm = (props) => {
         if(event.length < 1)
             setLastNameError()
         else if(event.length < 3) {
-            setLastNameError("Must be at least two characters!")
+            setLastNameError("Must be at least three characters!")
         }
         else setLastNameError(`Cool last name ${event}!`)
     }
@@ -65,7 +65,7 @@ const UserForm = (props) => {
         else setPasswordError(`Perfect!!`)
     }
 
-    // This is the password error function ------- 
+    // This is the confirm password error function ------- 
     const confirmPasswordError = (event) => {
         setConfirmPassword(event);
         if(event.length < 1)
