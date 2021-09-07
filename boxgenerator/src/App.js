@@ -8,6 +8,8 @@ function App() {
 
   const [allBoxes, setAllBoxes] = useState([])
 
+
+  // Creating a new box function 
   const addNewBox = (newBoxObj) => {
     const newBoxArray = [...allBoxes];
     newBoxArray.push(newBoxObj);

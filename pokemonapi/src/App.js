@@ -6,7 +6,7 @@ import axios from 'axios';
 function App() {
 
 
-  const [pokemons, setPokemons] = useState([]); // Setting state to an empty Array to hold all the pokemon 
+  const [pokemons, setPokemons] = useState([]); // Setting state to an empty Array to hold all the pokemon
 
 
   // Vanilla fetch method 
@@ -14,7 +14,7 @@ function App() {
     fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=807")
     .then(response => response.json())
     .then(jsonResponse => {
-      console.log(jsonResponse.results) // Remember to check where the array of object is via console log
+      console.log(jsonResponse.results) // Remember to check where the array of object is via console log / EX .results
       setPokemons(jsonResponse.results)
     })
     .catch(err => {

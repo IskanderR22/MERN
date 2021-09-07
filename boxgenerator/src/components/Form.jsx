@@ -7,13 +7,13 @@ const Form = (props) => {
     const {addNewBox} = props; //Deconstruct
 
     const createBox = (event) => {
-        event.preventDefault()
+        event.preventDefault() // To stop the page from refreshing 
 
-        const newBox = {
-            color
+        const newBox = { // Creating the object to add to the array
+            color: color // Make sure all of the attributes are included
         }
         setColor(newBox);   // blue
-        event.target[0].value = "" // Set the original value to "" NINJA BONUS
+        event.target[0].value = "" // Set the original value to "" NINJA BONUS, clears the input field
         
         addNewBox(newBox); // takes in a box object
     }
@@ -27,8 +27,8 @@ const Form = (props) => {
             <form onSubmit={createBox}>
                 <div>
                     <label>Color: </label>
-                    <input type="text" onChange={(event) => setColor(event.target.value)} />
-                    <input type="submit" value="Add" />
+                    <input type="color" onChange={(event) => setColor(event.target.value)}/> 
+                    <button>Add Box</button>
                 </div>
             </form> 
         </fieldset>

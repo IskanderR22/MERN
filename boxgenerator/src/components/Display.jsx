@@ -2,7 +2,7 @@ import React from 'react'
 
 const Display = (props) => {
 
-    const {allBoxes} = props; // Decontrsucted
+    const {allBoxes} = props; // Decontructing the array of boxes 
 
 
     return (
@@ -12,7 +12,7 @@ const Display = (props) => {
                 {
                     allBoxes.map( (box, index) => {
                         return (
-                            <div style={{width: "100px", height: "100px", background:`${box.color}`}} key ={index}>
+                            <div key ={index} style={{width: "100px", height: "100px", background:`${box.color}`}} >
                             </div>
                         )
                     })
