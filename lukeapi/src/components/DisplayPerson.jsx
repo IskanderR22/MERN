@@ -21,7 +21,7 @@ const DisplayPerson = (props) => {
         .catch(err => setNotFound(true)); // If the object is not found with the GET API request change the setNotFound to TRUE
     }
 
-    const content = ( // Creating a variable to hold out HTML
+    const content = ( // Creating a variable to hold our HTML
         (notFound) ? // Ternary that will return different HTML based on if it is set to TRUE or FALSE, first case is if the Ternary is TRUE, display the error HTML
         <div>
             <h1>These are not the droids you are looking for!</h1>

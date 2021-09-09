@@ -31,7 +31,7 @@ function App() {
   // DELETE FUNCTION 
   const deleteToDo = (todoObj, idx) => { // Creating a function and setting two parameters it will receive 
     let allTodosCopy = [...allTodos]; // Copying all the objects in the current array
-    allTodosCopy.splice(idx, 1); // ASK JUSTIN TO EXPLAIN
+    allTodosCopy.splice(idx, 1); // Going to the idx and removing 1 component at idx 
     setallTodos(allTodosCopy); // Set the new updated array 
   }
 

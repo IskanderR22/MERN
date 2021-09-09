@@ -12,6 +12,7 @@ function App() {
 // Creating routes to display different components 
 // exact is saying, only go to this route if it is entered exactly
 // "/planet/:id" is passing in a variable from the route, either a number or a string 
+// Passing in the form to every route to navigate between them
   return (
     <Switch>
       <Route exact path ="/form">
